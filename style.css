@@ -1,0 +1,609 @@
+/*
+Theme Name:PhoneSTore
+Text Domain: phonestore
+Version: 1.9
+Tested up to: 5.9
+Requires at least: 4.7
+Requires PHP: 5.2.4
+Description: Our default theme for 2020 is designed to take full advantage of the flexibility of the block editor. Organizations and businesses have the ability to create dynamic landing pages with endless layouts using the group and column blocks. The centered content column and fine-tuned typography also makes it perfect for traditional blogs. Complete editor styles give you a good idea of what your content will look like, even before you publish. You can give your site a personal touch by changing the background colors and the accent color in the Customizer. The colors of all elements on your site are automatically calculated based on the colors you pick, ensuring a high, accessible color contrast for your visitors.
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-patterns, block-styles, wide-blocks, accessibility-ready
+Author: the WordPress team
+Author URI: https://wordpress.org/
+Theme URI: https://wordpress.org/themes/twentytwenty/
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+All files, unless otherwise stated, are released under the GNU General Public
+License version 2.0 (http://www.gnu.org/licenses/gpl-2.0.html)
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned
+with others.
+*/
+@charset "UTF-8";
+body {
+  margin: 0px;
+  font-family: roboto, arial, sans-serif, monospace;
+}
+
+header{
+  position: relative;
+  top: 0;
+  right: 0%;
+  width: 100%;
+  height: auto;
+  background: url("./assets/img/fon1_ocqBHY7.jpg") no-repeat 50% 50%/cover;
+}
+header::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fdad7a14;
+}
+
+.header-block {
+  position: relative;
+}
+.header-block img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.header-block p {
+  position: relative;
+  font-size: 27px;
+  color: orange;
+  font-weight: bold;
+  text-shadow: 0px 0px 5px white;
+}
+
+.header-block-img {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.hedrblocktext {
+  position: relative;
+  font-size: 40px;
+  font-weight: bold;
+  color: #ff822f;
+  padding-left: 50px;
+  margin-bottom: 20px;
+}
+.hedrblocktext::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0%;
+  width: 14em;
+  height: 2px;
+  background: orange;
+}
+.hedrblocktext::before {
+  content: "";
+  position: absolute;
+  left: 0%;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  background: url("./assets/img/logo_nC2kHy3.png") no-repeat 50% 50%/cover;
+}
+
+.headertext {
+  position: relative;
+  font-size: 55px;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0px 0px 8px orange;
+}
+
+#Content {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: #f18359;
+}
+#Content h6 {
+  position: relative;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  padding-bottom: 10px;
+  border-bottom: solid 2px white;
+}
+#Content p {
+  position: relative;
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+  text-align: right;
+}
+
+.content-Blocks {
+  position: relative;
+}
+.content-Blocks form {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.content-form-input {
+  position: relative;
+  width: 20%;
+  height: auto;
+  border: none;
+  background: #ffc8a8;
+  border-radius: 10px;
+  padding: 9px;
+  display: inline-block;
+  margin: 10px;
+  text-align: left;
+  font-size: 20px;
+  color: white;
+  font-weight: 300;
+  outline: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.content-form-input:hover {
+  background: #ff633e;
+}
+
+.content-form-knopka {
+  position: relative;
+  top: -2px;
+  width: 20%;
+  height: auto;
+  background: white;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+  font-size: 20px;
+  font-weight: normal;
+  color: #fd774e;
+  padding: 8px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.content-form-knopka:hover {
+  background: none;
+  border: solid 1px white;
+  color: white;
+}
+.content-form-knopka:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#Contant2 {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.Content2-block {
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+  padding: 0px;
+}
+.Content2-block img {
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+  border: solid 3px #ff854d;
+}
+.Content2-block h6 {
+  position: relative;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+#Contant3 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: #f1e7e3;
+}
+
+.Contant3-blocks {
+  position: relative;
+  margin: 10px;
+  padding: 0px;
+}
+
+.Contant3blocks {
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.Contant3blocks::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  width: 125px;
+  height: 125px;
+  background: none;
+  border: solid 2px #ff7300;
+  border-radius: 100%;
+  -webkit-transform: translate(-50%, 0px);
+          transform: translate(-50%, 0px);
+}
+.Contant3blocks h6 {
+  position: relative;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.Content3-blocks-img {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  margin: 20px;
+}
+
+.Contant3-Slader {
+  position: relative;
+  padding: 65px 0px;
+  background: url("./assets/img/pl-t_XtRJqGH.png") no-repeat 50% 50%/90%;
+}
+
+#carouselExampleControls {
+  position: relative;
+  width: 64%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.carousel-inner, .carousel-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.carousel-inner{
+ border: solid 5px #f18359;
+}
+
+.carousel-item-img {
+  position: relative;
+  width: 100%;
+}
+
+#Content4 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: #f18359;
+}
+#Content4 h6 {
+  position: relative;
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+}
+#Content4 p {
+  position: relative;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+}
+
+#Content5 {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.Content5-Text {
+  position: relative;
+  font-size: 50px;
+  font-weight: bold;
+  color: #f18359;
+  padding-bottom: 20px;
+  border-bottom: solid 1px #f18359;
+}
+
+.Content5-blcoks {
+  position: relative;
+  text-align: center;
+  margin: 10px;
+}
+.Content5-blcoks img {
+  position: relative;
+  width: 100%;
+}
+
+.Content5-blcoks-text {
+  position: relative;
+  font-size: 25px;
+  color: #f18359;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.Content5-blcoks-stroka {
+  position: relative;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.TovarKnopka {
+  position: relative;
+  height: auto;
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  background: #f18359;
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.TovarKnopka:hover {
+  background: none;
+  border: solid 1px #f18359;
+  color: #f18359;
+}
+.TovarKnopka:focus{
+box-shadow: none;
+}
+
+#Content6 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: #f18359;
+}
+#Content6 h6 {
+  position: relative;
+  font-size: 50px;
+  color: white;
+  font-weight: bold;
+}
+
+.Content6-blocks {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+}
+.Content6-blocks img {
+  position: relative;
+  width: 100px;
+}
+
+.Content3-blocks-silka {
+  position: relative;
+  text-decoration: none;
+}
+.Content3-blocks-silka::before {
+  content: "⇨";
+  position: absolute;
+  top: -48px;
+  left: -45%;
+  color: white;
+  font-size: 70px;
+}
+
+.Content6-Knopka2 {
+  position: relative;
+  width: 50%;
+  height: auto;
+  padding: 5px;
+  background: white;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 300;
+  color: #f18359;
+  border: none;
+  border-radius: 10px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.Content6-Knopka2:hover {
+  background: none;
+  border: solid 1px white;
+  color: white;
+}
+.Content6-Knopka2:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: url("./assets/img/fon1_ocqBHY7.jpg") no-repeat 50% 50%/cover;
+}
+footer:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fdad7a14;
+}
+
+.footerblocktext {
+  position: relative;
+  font-size: 40px;
+  font-weight: bold;
+  color: #ff822f;
+  padding-left: 50px;
+}
+.footerblocktext::before {
+  content: "";
+  position: absolute;
+  left: 0%;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  background: url("./assets/img/logo_nC2kHy3.png") no-repeat 50% 50%/cover;
+}
+
+.footerblock2text {
+  position: relative;
+  font-size: 27px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 0px 5px #ff4600;
+}
+
+.footerblock2stroka {
+  position: relative;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 0px 5px #ff4600;
+}
+
+.footersilka {
+  position: relative;
+  width: 100px;
+  height: auto;
+  background: #f18359;
+  border: none;
+  border-radius: 15px;
+  display: inline-block;
+  margin: 10px;
+  padding: 5px;
+  color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.footersilka:hover {
+  background: #f18359e6;
+  color: white;
+}
+
+@media only screen and (max-width: 999px) {
+  .hedrblocktext::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0%;
+  }
+}
+
+/*__________________________________________________WORDPREES_STYLE______________________________________________________*/
+.description{
+display: none;
+}
+#header{
+position: relative;
+width: 100%;
+margin: 0px;
+height: auto;
+padding: 25px 0px;
+background:#ff822f;
+}
+#headerimg h1{
+  position: relative;
+  font-size: 40px;
+  font-weight: bold;
+  color: #ff822f;
+  padding-left: 50px;
+  margin-bottom: 20px;
+}
+#headerimg a{
+text-decoration: none;
+color: white;
+text-shadow: 0px 0px 5px  #ff822f;
+}
+#page hr{
+display: none;
+}
+#primary nav{
+position: relative;
+width: 100%;
+padding: 20px;
+background: #ff822f;
+color: white;
+font-size: 20px;
+border-top: solid 1px white;
+margin: 0px;
+}
+#primary .woocommerce-breadcrumb a{
+  color: white;
+  text-decoration: none;
+}
+.woocommerce-products-header{
+display: none;
+}
+.woocommerce-products-header__title{
+margin: 0px;
+padding: 20px;
+}
+.woocommerce-result-count{
+padding: 20px;
+color: grey;
+}
+.woocommerce-ordering{
+padding: 20px;
+}
+#primary ul {
+position: relative;
+width: 100%;
+height: auto;
+list-style: none;
+display: flex;
+justify-content: space-between;
+flex-flow: wrap;
+padding: 25px;
+}
+#primary li {
+position: relative;
+top: 0;
+right: 0%;
+height: auto;
+display: inline-block;
+margin: 10px;
+text-align: center;
+font-size: 20px;
+}
+.products a{
+position: relative;
+text-decoration: none;
+color: orange;
+}
+.woocommerce-result-count{
+width: fit-content;
+position: relative;
+float: left;
+}
+.woocommerce-ordering{
+position: relative;
+width: fit-content;
+float: right;
+}
+.products .button{
+position: relative;
+top: 0;
+right: 0%;
+border: none;
+border-radius: 10px;
+width: auto;
+height: auto;
+padding: 9px;
+color: white;
+outline: none;
+cursor: pointer;
+background: #ff822f;
+transition: 0.4s;
+}
+.products .button:hover{
+background: none;
+border: solid 1px #ff822f;
+color:#ff822f ;
+}
+.woocommerce-loop-product__title{
+margin: 20px 0px;
+font-weight: normal;
+}
